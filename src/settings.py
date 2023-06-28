@@ -12,9 +12,9 @@ PROJECT_NAME_FULL: str = "CHASE DB1"
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.Custom(url="")
-INDUSTRIES: List[Industry] = Industry.Medical()
-CV_TASKS: List[CVTask] = CVTask.InstanceSegmentation()
-ANNOTATION_TYPES: List[AnnotationType] = AnnotationType.InstanceSegmentation()
+INDUSTRIES: List[Industry] = [Industry.Medical()]
+CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
 RELEASE_YEAR: int = 2016
 HOMEPAGE_URL: str = "https://blogs.kingston.ac.uk/retinal/chasedb1/"
