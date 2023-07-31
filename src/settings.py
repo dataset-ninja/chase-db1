@@ -19,19 +19,19 @@ PROJECT_NAME_FULL: str = "CHASE DB1: Retinal Vessel Reference Dataset"
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.Custom(url="")
+LICENSE: License = License.CC_BY_4_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Research.Medical()]
 CATEGORY: Category = Category.Medical()
 
-CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation()]
-ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
+CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 
 RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
-    RELEASE_YEAR: int = 2016
+    RELEASE_YEAR: int = 2012
 
-HOMEPAGE_URL: str = "https://blogs.kingston.ac.uk/retinal/chasedb1/"
+HOMEPAGE_URL: str = "https://researchdata.kingston.ac.uk/96/"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = 884685
@@ -43,24 +43,36 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/chase-db1"
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[
-    Union[str, dict]
-] = "https://staffnet.kingston.ac.uk/~ku15565/CHASE_DB1/assets/CHASEDB1.zip"
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
+    "CHASEDB1.zip": "https://researchdata.kingston.ac.uk/96/1/CHASEDB1.zip",
+    "readme.txt": "https://researchdata.kingston.ac.uk/96/2/readme.txt",
+}
+"https://staffnet.kingston.ac.uk/~ku15565/CHASE_DB1/assets/CHASEDB1.zip"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = None
+PAPER: Optional[str] = ["https://doi.org/10.1109/TBME.2012.2205687"]
 CITATION_URL: Optional[str] = None
 AUTHORS: Optional[List[str]] = [
-
-"Fraz, Muhammad Moazam", "Remagnino, Paolo", "Hoppe, Andreas", "Uyyanonvara, Bunyarit", "Rudnicka, Alicja R"  , "Owen, Christopher G" and "Barman, Sarah A"
-    
+    "Fraz, Muhammad Moazam",
+    "Remagnino, Paolo",
+    "Hoppe, Andreas",
+    "Uyyanonvara, Bunyarit",
+    "Rudnicka, Alicja R.",
+    "Owen, Christopher G.",
+    "Barman, Sarah A.",
 ]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Kingston University London"
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.kingston.ac.uk/"
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "Kingston University, London",
+    "St. George's, University of London",
+]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
+    "https://www.kingston.ac.uk/",
+    "https://www.sgul.ac.uk/",
+]
 SLYTAGSPLIT: Optional[Dict[str, List[str]]] = None
 TAGS: List[str] = None
 
