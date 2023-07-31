@@ -14,13 +14,13 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "CHASE DB1"
-PROJECT_NAME_FULL: str = "CHASE DB1"
+PROJECT_NAME_FULL: str = "CHASE DB1: Retinal Vessel Reference Dataset"
 
 ##################################
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.Custom(url="")
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical()]
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Research.Medical()]
 CATEGORY: Category = Category.Medical()
 
 CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation()]
@@ -54,19 +54,9 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 PAPER: Optional[str] = None
 CITATION_URL: Optional[str] = None
 AUTHORS: Optional[List[str]] = [
-    "Prof. Sarah A. Barman",
-    "Dr. Muhammad M. Fraz",
-    "Dr. Roshan A. Welikaka",
-    "Mohamed Habib",
-    "Prof. Christopher G. Owen",
-    "Dr. Alicja R. Rudnicka",
-    "Prof. David P. Strachan",
-    "Prof. Peter H. Whincup",
-    "Dr. Bunyarit Uyyanonvara",
-    "Dr. Akara Sopharak",
-    "Dr. Cattleya Duanggate",
-    "Prof. Paul J. Foster",
-    "Dr. Tom H. Williamson",
+
+"Fraz, Muhammad Moazam", "Remagnino, Paolo", "Hoppe, Andreas", "Uyyanonvara, Bunyarit", "Rudnicka, Alicja R"  , "Owen, Christopher G" and "Barman, Sarah A"
+    
 ]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Kingston University London"
