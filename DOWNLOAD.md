@@ -11,6 +11,9 @@ pip install --upgrade dataset-tools
 ``` python
 import dataset_tools as dtools
 
-dtools.download(dataset='CHASE DB1', dst_path='~/dtools/datasets/CHASE DB1.tar')
+dtools.download(dataset='CHASE DB1', dst_dir='~/dataset-ninja/')
 ```
-The data in original format can be 🔗[downloaded here](https://staffnet.kingston.ac.uk/~ku15565/CHASE_DB1/assets/CHASEDB1.zip)
+The data in original format can be downloaded here:
+
+- [CHASEDB1.zip](https://researchdata.kingston.ac.uk/96/1/CHASEDB1.zip)
+- [readme.txt](https://researchdata.kingston.ac.uk/96/2/readme.txt)
