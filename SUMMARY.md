@@ -6,4 +6,4 @@ Images in the CHASE DB1 dataset have pixel-level semantic segmentation annotatio
 
 Here is the visualized example grid with annotations:
 
-[Horizontal Grid](https://github.com/dataset-ninja/chase-db1/raw/main/visualizations/horizontal_grid.webm)
+<img src="https://github.com/dataset-ninja/chase-db1/raw/main/visualizations/horizontal_grid.png">
