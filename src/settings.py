@@ -50,10 +50,10 @@ DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
 "https://staffnet.kingston.ac.uk/~ku15565/CHASE_DB1/assets/CHASEDB1.zip"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {"vessel": [0, 255, 255]}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = ["https://doi.org/10.1109/TBME.2012.2205687"]
+PAPER: Optional[str] = "https://doi.org/10.1109/TBME.2012.2205687"
 CITATION_URL: Optional[str] = None
 AUTHORS: Optional[List[str]] = [
     "Fraz, Muhammad Moazam",
