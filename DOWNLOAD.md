@@ -1,6 +1,6 @@
 Dataset **CHASE DB1** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/9/T/mR/r8S4Z2haK7SbHQEi5TmofsDELad9YbvqFNTjOsVeJKkcs8JYWT87ALSAK3sQVGkuVotK7ZmpUJ5pRd9lKoORD7I5RztsZyhLE8HQUid3D3CQmp8AaijZvdTclFV5.tar)
+ [Download](https://www.dropbox.com/scl/fi/fwrdr22kr9l9mett5keh1/chase-db1-DatasetNinja.tar?rlkey=3tb1kd61q3stem1yxso33hl01&dl=1)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
